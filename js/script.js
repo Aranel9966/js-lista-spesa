@@ -37,10 +37,14 @@ while(shoppingList.length != index){
 addEl.addEventListener('click',function(){
     let newAdd = prompt('cosa vuoi aggiungere?')
 
-    let stampa = document.createElement('li');
 
-    stampa.innerHTML=(newAdd)
+    if (newAdd){
 
-    listEl.append(stampa);
+        let stampa = document.createElement('li');
+        
+        stampa.innerHTML=(newAdd)
+        
+        listEl.append(stampa);
+    }
     
 })
